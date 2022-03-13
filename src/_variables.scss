@@ -1,0 +1,44 @@
+$main-white:     #FFF;
+$text-color:     #E65C43;
+
+$body-color:     #FFF;
+$hover-color:    #FFF;
+$hdrh1-color:    #E65C43;
+$hdrh2-color:    #FFF;
+$hdrh3-color:    #666;
+$hlnh1-color:    #FFF;
+$footer-color:   #FFF;
+$screen-resp-h3: #FFF;
+
+$alt-h1-color:     #E65C43;
+$nav-a-color:      #E65C43;
+$content-h3-color: #666;
+
+$hln-bg-color:     #F25C43;
+$footer-bg-color:  #30353D;
+$greyber-bg-color: #F5F6F6;
+
+$font-stack: 'Roboto', sans-serif;
+
+$hdrh1-weight: 100;
+$hdrh2-weight: 900;
+$hdrh3-weight: 400;
+$hlnh1-weight: 100;
+$alt-h3-weight: 400; 
+
+$bodybg-imgpath:   "../images/bg.gif";
+$figurebg-imgpath: "../images/logo.png";
+$social-imgpath:   "../images/social-media.png";
+
+$social-1-imgpath: $social-imgpath;
+$social-2-imgpath: $social-imgpath;
+$social-3-imgpath: $social-imgpath;
+$social-4-imgpath: $social-imgpath;
+
+$media-size: 900;
+
+/* MEDIA QUERIES */
+$media-trip1: 959px;   //small screen or low res.
+$media-trip2: 767px;   //tablet
+$media-trip3: 459px;   //phone
+$media-trip0: $media-trip1 + 1 ;  //full-size; no trip point; is default

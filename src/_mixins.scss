@@ -1,0 +1,78 @@
+
+@mixin clearfix{
+    &:before, &:after {
+        content: '';
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin media-query-factory($breakpoint-width) {
+    @media only screen and (max-width: $breakpoint-width) {
+        @content;
+      }
+
+}
+
+@mixin social-icon-element-offsets($qty, $delta-offset) {     //in nav, footer
+    $position-aligned: (nth * $delta-offset);
+    &:nth-child(n) {
+        margin-left: $delta-offset;
+    }     
+}
+
+@mixin break($args...) {
+    @if length($args) == 1 {
+    @media (min-width: nth($args, 1) ) {
+        @content;
+        }
+    }  @else {
+    @media (min-width: nth($args, 1) ) and 
+           (max-width: nth($args, 2) ) {
+        @content;
+        }
+    }
+}
+
+
+
+/*
+@mixin break($length) {
+    @media (min-width: $length) {
+        @content;
+    }
+}
+*/
+
+/*
+@mixin app-background($color)
+  #{if(&, '&.app-background', '.app-background')}
+    background-color: $color
+    color: rgba(#fff, 0.75)
+
+
+
+@include app-background(#036)
+
+.sidebar
+  @include app-background(#c6538c)
+
+
+*/ 
+
+/*
+
+.clearfix {
+    overflow: auto;
+  }
+  
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+*/
